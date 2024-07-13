@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sed "54s/$(sed -n '54p' ~/.config/rofi/config.rasi |cut -d '(' -f 2)/$(cat ~/.cache/wal/wal));/" ~/.config/rofi/config.rasi
